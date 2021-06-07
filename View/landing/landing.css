@@ -55,6 +55,9 @@ nav ul li a {
     color: inherit;
 }
 
+nav ul li a:hover { 
+   color: #262626;
+}
 /* End of navbar */
 /* Banner */
 .banner-container {
@@ -112,6 +115,9 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.btn-booking-now:hover {
+    background-color: #FF8D16 ;
 }
 
 .btn-booking-now a {
@@ -273,6 +279,9 @@ nav ul li a {
     border-radius: 11px;
     margin-right: 0px;
 }
+.help-btn-group .bantuan:hover {
+    background-color: #CDCDCD; 
+}
 
 .help-btn-group .booking {
     background-color: #F08210;
@@ -284,6 +293,9 @@ nav ul li a {
     width: 251px;
     border-radius: 11px;
     margin-left: 14px;
+}
+.help-btn-group .booking:hover {
+    background-color: #FF8D16; 
 }
 
 .contact-section {

@@ -1,0 +1,106 @@
+* {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    color: #595959;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid #CECECE;
+    border-radius: 11px;
+    padding: 50px 66px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    height: 55px;
+    width: 55px;
+}
+
+.container h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.container .short-description {
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.container .input-data {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.container .input-data .email {
+    height: 45px;
+    width: 220px;
+    border-radius: 4px;
+    padding-left: 12px;
+    font-size: 18px;
+}
+
+.container .input-data .password {
+
+    margin-top: 20px;
+    height: 45px;
+    width: 220px;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    padding-left: 12px;
+    font-size: 18px;
+
+}
+
+.container .input-navigation {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 235px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .input-navigation .make-account {
+    display: flex;
+    align-items: center;
+}
+.container .input-navigation .make-account a{
+
+    text-decoration: none;
+    color: #1A73E9;
+    margin-right: 0px;
+}
+
+.container .input-navigation .btn-masuk {
+    padding: 8px 30px;
+    background-color: #1A73E9; 
+    border-radius: 4px;
+}
+.container .input-navigation .btn-masuk:hover {
+    
+    background-color: #1666cf; 
+    
+}
+
+.container .input-navigation .btn-masuk a {
+    text-decoration: none;
+    background-color: inherit;
+    color: #fff; 
+}
