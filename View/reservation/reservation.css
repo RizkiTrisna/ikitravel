@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;  flex-wrap menentukan apakah tinggi atau 
+                    lebar dari div harus dipertahankan 
+                    atau dipaksa menjadi satu baris*/
+    justify-content: space-between;
+}
+
+nav {
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .nav-dummy {
+    width: 223px;
+}
+
+nav .nav-title {
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #707070;
+}
+
+nav .nav-title img {
+    height: 45px;
+    width: 45px;
+}
+
+nav .nav-title-divider {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 27px;
+    border: 1px solid #dbdada;
+}
+
+nav .logout-btn {
+    /* display: absolute; */
+    width: 223px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+nav .logout-btn a {
+    text-decoration: none;
+}
+
+nav .logout-btn img {
+    width: 26px;
+    height: 26px;
+
+}
+
+nav .logout-btn a span {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    margin-left: 8px;
+    color: #707070;
+}
+
+nav .logout-btn a span:hover {
+    font-weight: 500;
+    font-family: 'Assistant', sans-serif;
+    color: rgb(97, 97, 97);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-self: stretch;
+    flex-grow: 1;
+    /* membuat div terpilih memngisi seluruh sisa tinggi div induk*/
+    margin-top: 0px;
+}
+
+/* breadcrumbs */
+.content-container .content .breadcrumbs {
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #707070;
+}
+
+.content-container .content .breadcrumbs span.slash {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.content-container .content .breadcrumbs span.current-location {
+    font-weight: 501;
+}
+
+/* end of breadcrumbs */
+
+.content-container .content .form-booking-container {
+    width: 1088px; 
+    margin-top: 30px;
+    background-color: #0F5DA9;
+    border-radius: 11px;
+    padding: 45px;
+}
+
+/* booking container title */
+.content-container .content .form-booking-container .form-booking-title {
+    font-family: 'Assistant', sans-serif;
+}
+
+.content-container .content .form-booking-container .form-booking-title h2 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 501;
+    margin-bottom: 0px;
+}
+
+.content-container .content .form-booking-container .form-booking-title p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 4px;
+    color: #fff;
+
+}
+
+/* end of booking container title */
+
+/* form booking input group */
+.content-container .content .form-booking-container .form-booking-input-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .label {
+    color: #fff;
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    font-weight: 550px;
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .input-group .data {
+    margin-top: 8px;
+    height: 45px;
+    padding: 0px 12px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .input-group.car-brand {
+    width: 220px;
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .input-group.car-model {
+    width: 220px;
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .input-group.date {
+    width: 220px;
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .input-group.duration {
+    width: 120px;
+}
+
+.content-container .content .form-booking-container .form-booking-input-group .input-group.unit-total {
+    width: 110px;
+}
+
+
+
+
+.content-container .content .form-booking-container .booking-btn {
+    width: 170px;
+    height: 45px;
+    
+    background-color: #FF8E35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.content-container .content .form-booking-container .booking-btn:hover {    
+    background-color: rgb(245, 126, 0);
+}
+
+.content-container .content .form-booking-container .booking-btn a {
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* End of form booking input group */
+
+footer {
+    height: 70px;
+    background-color: #051949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    color: #CECECE;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-dummy">
+
+        </div>
+        <div class="nav-title">
+            <img src="../img/logo.png" alt="">
+
+
+            <span class="nav-title-divider"></span>
+            <span>"There is always way to travel"</span>
+        </div>
+        <div class="logout-btn">
+            <img src="../img/logout.png" alt="">
+            <a href="#">
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </nav>
+    <div class="content-container">
+
+        <div class="content">
+
+            <div class="breadcrumbs">
+                Home <span class="slash">/</span> <span class="current-location">Booking</span>
+            </div>
+            <div class="form-booking-container">
+                <div class="form-booking-title">
+                    <h2>Form Pemesanan Mobil</h2>
+                    <p>Jumat, 6 November 2020</p>
+                </div>
+                <div class="form-booking-input-group">
+                    <div class="input-group car-brand">
+                        <label for="data-brand" class="label label-brand">Merk Mobil</label>
+                        <select name="data-car-brand" id="data-brand" class="data brand">
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-group car-model">
+                        <label for="data-model" class="label label-model">Model Mobil</label>
+                        <select name="data-car-model" id="data-model" class="data data-model">
+                            <option value="Toyota">Avanza</option>
+                            <option value="Kijang Innova">Kijang Innova</option>
+                            <option value="Agya">Agya</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group date ">
+                        <label for="book-date" class="label label-date">Tanggal</label>
+                        <input type="date" name="book-date" id="book-date" class="data book-date">
+                    </div>
+
+                    <div class="input-group duration">
+                        <label for="data-duration" class="label label-duration">Durasi Pinjam</label>
+                        <input type="number" name="data-duration" id="data-duration" class="data duration"
+                            placeholder="Hari">
+                    </div>
+
+                    <div class="input-group unit-total">
+                        <label for="data-unit-total" class="label label-unit">Banyak</label>
+                        <input type="number" name="data-unit-total" id="data-unit-total" class="data unit-total"
+                            placeholder="Unit">
+                    </div>
+                </div>
+
+                <div class="booking-btn">
+                    <a href="#">Pesan</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>2020 Copyright Ikitravel • All rights reserved • Made in Malang</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Ikitekno</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <img src="../img/logo.png" alt="" id="logo">
+                <h1 class="make-account-header">
+                    Buat Akun Ikitravel
+                </h1>
+                <p class="make-account-description">
+                    Lanjutkan ke ikitravel
+                </p>
+            </div>
+
+            <input type="text" class="data full-name" placeholder="Nama Lengkap">
+            <div class="password-group">
+                <input type="text" class="data password" placeholder="Sandi">
+                <input type="text" class="data password-confirmation" placeholder="Konfirmasi">
+            </div>
+            <input type="number" class="data phone-number" placeholder="Nomor Telepon">
+            <div class="profile-img-group">
+                <label for="profile-img" class="profile-img-label">
+                    <span class="text-upload-foto-pribadi">Upload foto pribadi </span>  <img src="../img/upload-logo.png" alt="">
+                </label>
+                <input type="file" name="profile-img" id="profile-img" class="data profile-img"> 
+            </div>
+            <div class="identity-img-group">
+                <label for="identity-img" class="identity-img-label">
+                    <span class="text-upload-foto-identity">KTP/KITAS/Identitas lain</span> <img src="../img/upload-logo.png" alt="">
+                </label>
+                <input type="file" name="identity-img" id="identity-img" class="data identity-img">
+            </div>
+
+            <input type="date" name="born-day" id="born-day" class="data born-day">
+            <textarea type="textarea" name="full-address" id="full-address" class="data full-address" placeholder="Alamat Lengkap"></textarea>
+            <div class="navigation-btn-group">
+                <a href="#" class="login-btn">Sudah punya akun?</a>
+                <div class="register-container">
+                    <a href="#" class="register-btn">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
