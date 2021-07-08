@@ -1,0 +1,183 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Assistant', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 904px;
+    height: 596px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+    border: 1px solid #CECECE;
+    border-radius: 11px;
+}
+
+.container .header {
+    font-weight: bold;
+    font-size: 50px;
+    color: #051949;
+    margin-bottom: 0px;
+}
+
+.container .content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-bar {
+    font-size: 20px;
+    width: 50%;
+}
+
+.detail {
+    margin-bottom: 10px;
+}
+
+.detail .label {
+    color: #9FA5AE;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.detail .data {
+    color: #051949;
+    margin-top: 6px;
+}
+
+.pay-status .paid-off {
+    padding: 4px 55px;
+    color: #12AC5C;
+    background-color: #CCF5E0;
+    border-radius: 11px;
+}
+
+.pay-status .on-hold {
+    padding: 4px 22px;
+    color: #E94848;
+    background-color: #FCECEC;
+    border-radius: 11px;
+}
+
+/* end of left side */
+.right-bar {
+    font-size: 20px;
+    width: 50%;
+}
+
+.right-bar h3 {
+    font-weight: 600;
+    color: #051949;
+    margin-bottom: 0px;
+
+}
+
+.right-bar .total-payment {
+    margin-top: 4px;
+    width: 100%;
+}
+
+.right-bar .total-payment .title {
+    color: #9FA5AE;
+    text-align: left;
+}
+
+.right-bar .total-payment .value {
+    float: right;
+}
+
+/* end of total payment  */
+
+
+.right-bar .line-divider {
+    background-color: #707070;
+    height: 1px;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+/* end of line divider */
+
+.right-bar .note-caption {
+    margin-top: 4px;
+    color: #A2A2A2;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.right-bar .bank-account-info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-bar .bank-account-info img {
+    max-height: 45px;
+    max-width: 45px;
+
+}
+
+.right-bar .bank-account-info .bank-account-detail {
+    margin-left: 15px;
+}
+
+.right-bar .bank-account-info .bank-account-detail span {
+    display: block;
+    font-size: 20px;
+    color: #051949;
+}
+
+.right-bar .btn-confirm-payment {
+    margin-top:30px;
+    width: 100%;
+    background-color: #1A73E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    border-radius: 4px;
+}
+
+.right-bar .btn-confirm-payment:hover {
+    background-color: #1766cc;
+}
+
+.right-bar .btn-confirm-payment a {
+    text-decoration: none; 
+    color: #ffff;
+    font-size: 20px; 
+    font-weight: 600; 
+}
+
+/* end of button confirmation payment  */
+
+.right-bar .btn-cancel-request {
+    margin: top 15px;;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    border-radius: 4px;
+}
+
+.right-bar .btn-cancel-request a {
+    text-decoration: none; 
+    color: #9FA5AE;
+    font-size: 20px;  
+}
+.right-bar .btn-cancel-request a:hover {
+    text-decoration: none; 
+    color: #84878b;
+    font-size: 20px;  
+}
