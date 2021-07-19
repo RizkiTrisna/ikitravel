@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Ikitravel | List Transaksi</title>
+    <link rel="stylesheet" href="list-transaction.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+        <div class="nav-item nav-transaction">
+            <a href=""><img src="../img/icon-transaction.png" alt=""></a>
+        </div>
+        <div class="nav-item nav-car-list">
+            <a href=""> <img src="../img/icon-car.png" alt=""> </a>
+        </div>
+        <div class="nav-item nav-account-config">
+            <a href=""> <img src="../img/icon-account-config.png" alt=""></a>
+        </div>
+        <div class="nav-item nav-stats">
+            <a href=""><img src="../img/icon-stats.png" alt=""></a>
+        </div>
+    </nav>
+    <main>
+        <div class="header">
+            <h1 class="title">Transaksi</h1>
+        </div>
+        <div class="search-data-group">
+            <input type="text" name="search-transaction" id="search-transaction" placeholder="Cari data transaksi">
+            <div class="btn-search"><a href="#"><img src="../img/icon-search.png" alt=""></a></div>
+        </div>
+        <div class="caption">
+            <p>Total <span class="qty-transaction ">15</span> transaksi ditemukan.</p>
+        </div>
+        <div class="table-group">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="left">Foto</th>
+                        <th>Jenis Mobil</th>
+                        <th>ID Travel</th>
+                        <th>Peminjam</th>
+                        <th>Pembayaran</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr>
+                        <td class="left"><img src="../img/dummy-car-photo.png" alt=""></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-number">S2983PU</span>)</td>
+                        <td>ID:<span class="car_id">0189023167</span></td>
+                        <td>Rizal Choi</td>
+                        <td><span class="paid-off">Sudah Dibayar</span></td>
+                        <td><span class="borrowed">Dipinjam</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><img src="../img/dummy-car-photo.png" alt=""></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-number">S2983PU</span>)</td>
+                        <td>ID:<span class="car_id">0189023167</span></td>
+                        <td>Rizal Choi</td>
+                        <td><span class="paid-off">Sudah Dibayar</span></td>
+                        <td><span class="borrowed">Dipinjam</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><img src="../img/dummy-car-photo.png" alt=""></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-number">S2983PU</span>)</td>
+                        <td>ID:<span class="car_id">0189023167</span></td>
+                        <td>Rizal Choi</td>
+                        <td><span class="paid-off">Sudah Dibayar</span></td>
+                        <td><span class="returned">Dikembalikan</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><img src="../img/dummy-car-photo.png" alt=""></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-number">S2983PU</span>)</td>
+                        <td>ID:<span class="car_id">0189023167</span></td>
+                        <td>Rizal Choi</td>
+                        <td><span class="on-hold">Belum Dibayar</span></td>
+                        <td><span class="borrowed">Dipinjam</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
