@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-family: 'Assistant', sans-serif;
+}
+
+.container {
+    padding: 60px 100px;
+    border: 1px solid #707070;
+    border-radius: 11px;
+}
+
+.container .header h1 {
+    font-size: 50px;
+    color: #051949; 
+    text-align: left;
+}
+
+.container main {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: [init-col] 352px [end-first-col] 352px [end-second-col];
+    grid-template-rows: [init-row] 78px [end-first-row] 78px [end-second-row] 78px [end-third-row] 78px [end-fourth-row] 102px [end-fifth-row];
+    row-gap: 10px;
+    column-gap: 100px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+/* Main's grid configuration */
+.input-group.transaction-id-group {
+    grid-column-start: init-col;
+    grid-column-end: end-first-col;
+    grid-row-start: init-row;
+    grid-row-end: end-first-row;
+}
+
+.input-group.user-id-group {
+    grid-column-start: init-col;
+    grid-column-end: end-first-col;
+    grid-row-start: end-first-row;
+    grid-row-end: end-second-row;
+}
+
+.input-group.car-type-group {
+    grid-column-start: init-col;
+    grid-column-end: end-first-col;
+    grid-row-start: end-second-row;
+    grid-row-end: end-third-row;
+}
+
+.input-group.borrow-date-group {
+    grid-column-start: init-col;
+    grid-column-end: end-first-col;
+    grid-row-start: end-third-row;
+    grid-row-end: end-fourth-row;
+}
+
+/* end first column */
+/* Second column */
+
+.input-group.unit-total-group {
+    grid-column-start: end-first-col;
+    grid-column-end: end-second-col;
+    grid-row-start: init-row;
+    grid-row-end: end-first-row;
+}
+
+.input-group.payment-confirmation-group {
+    grid-column-start: end-first-col;
+    grid-column-end: end-second-col;
+    grid-row-start: end-first-row;
+    grid-row-end: end-second-row;
+}
+
+.input-group.borrow-status-group {
+    grid-column-start: end-first-col;
+    grid-column-end: end-second-col;
+    grid-row-start: end-second-row;
+    grid-row-end: end-third-row;
+}
+
+.input-group.returned-status-group {
+    grid-column-start: end-first-col;
+    grid-column-end: end-second-col;
+    grid-row-start: end-third-row;
+    grid-row-end: end-fourth-row;
+}
+
+/* end main grid configuration */
+
+.input-group label {
+    font-size: 20px;
+    color: #595959;
+}
+
+.input-group .input {
+    margin-top: 7px;
+    height: 45px;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: inherit;
+    font-size: 18px;
+    color: #595959;
+}
+
+.input-group .input.xs {
+    width: 112px;
+}
+
+.btn-group {
+    grid-column-start: end-first-col;
+    grid-column-end: end-second-col;
+    grid-row-start: end-fourth-row;
+    grid-row-end: end-fifth-row;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.btn-group .btn-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    border-radius: 4px;
+    background-color: #CECECE;
+    padding: 3px 28px;
+}
+
+.btn-group .btn-back:hover{ 
+    background-color: #c2c2c2; 
+}
+
+.btn-group .btn-back a {
+    text-decoration: none; 
+    font-size: 20px; 
+    font-weight: 600;
+    color: #FFFF;
+}
+
+.btn-group .btn-save{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    height: 42px;
+    border-radius: 4px;
+    background-color: #1A73E9;
+    padding: 3px 22px;
+}
+.btn-group .btn-save:hover{ 
+    background-color: #1868cf; 
+}
+
+.btn-group .btn-save a {
+    text-decoration: none; 
+    font-size: 20px; 
+    color: #FFFF;
+}

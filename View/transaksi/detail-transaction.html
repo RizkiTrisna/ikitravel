@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Ikitravel | Detail Transaksi</title>
+    <link rel="stylesheet" href="detail-transaction.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Detail Transaksi
+            </h1>
+        </div>
+        <main>
+            <div class="input-group transaction-id-group">
+                <label for="transaction-id">
+                    ID Transaksi
+                </label>
+                <input type="text" class="input sm" id="transaction-id" value="123xxxxx" disabled>
+            </div>
+
+            <div class="input-group user-id-group">
+                <label for="user-id">
+                    ID User
+                </label>
+                <input type="text" id="user-id" class="input sm" value="12xxxxxx" disabled>
+            </div>
+            <div class="input-group car-type-group">
+                <label for="car-type">
+                    Jenis Mobil
+                </label>
+                <select name="car-type" id="car-type" class="input sm">
+                    <option value="Suzuki Ertiga">Suzuki Ertiga</option>
+                    <option value="Toyota Avanza">Toyota Avanza</option>
+                    <option value="Honda Camry">Honda Camry</option>
+                </select>
+            </div>
+            <div class="input-group borrow-date-group">
+                <label for="borrow-date">
+                    Tanggal Pinjam
+                </label>
+                <input type="date" name="borrow-date" id="borrow-date" class="input sm">
+            </div>
+            <div class="input-group unit-total-group">
+                <label for="unit-total">
+                    Jumlah unit
+                </label>
+                <input type="number" id="unit-total" class="input xs">
+
+            </div>
+            <div class="input-group payment-confirmation-group">
+                <label for="payment-confirmation">
+                    Konfirmasi Bayar
+                </label>
+                <select name="payment-confirmation" id="payment-confirmation" class="input sm">
+                    <option value="Sudah dibayar">Sudah dibayar</option>
+                    <option value="Belum dibayar">Belum dibayar</option>
+                </select>
+
+            </div>
+            <div class="input-group borrow-status-group">
+                <label for="borrow-status">
+                    Status Ambil
+                </label>
+                <select name="borrow-status" id="borrow-status" class="input sm">
+                    <option value="Sudah diambil">Sudah diambil</option>
+                    <option value="Belum diambil">Belum diambil</option>
+
+                </select>
+            </div>
+
+            <div class="input-group returned-status-group">
+                <label for="returned-status">
+                    Status Kembali
+                </label>
+                <select name="returned-status" id="returned-status" class="input sm">
+                    <option value="Sudah dikembalikan">Sudah dikembalikan</option>
+                    <option value="Belum dikembalikan">Belum dikembalikan</option>
+
+                </select>
+            </div>
+
+            <div class="btn-group">
+                <div class="btn-back">
+                    <a href="#">Kembali</a>
+                </div>
+                <div class="btn-save">
+                    <a href="#" >Simpan Perubahan</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
