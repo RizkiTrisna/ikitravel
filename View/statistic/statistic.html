@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikitravel | Statistic</title>
+    <link rel="stylesheet" href="statistic.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+        <div class="nav-item nav-transaction">
+            <a href=""><img src="../img/icon-transaction.png" alt=""></a>
+        </div>
+        <div class="nav-item nav-car-list">
+            <a href=""> <img src="../img/icon-car.png" alt=""> </a>
+        </div>
+        <div class="nav-item nav-account-config">
+            <a href=""> <img src="../img/icon-account-config.png" alt=""></a>
+        </div>
+        <div class="nav-item nav-stats">
+            <a href=""><img src="../img/icon-stats.png" alt=""></a>
+        </div>
+    </nav>
+    <main>
+        <div class="header">
+            <h1 class="title">Statistik</h1>
+        </div>
+        <div class="wrapper">
+            <div class="search-data-group">
+                <input type="text" name="search-statistic" id="search-statistic" placeholder="Cari id transaksi">
+                <div class="btn-search"><a href="#"><img src="../img/icon-search.png" alt=""></a></div>
+            </div>
+            <div class="print-statistic">
+                <button class="btn-print"><img src="../img/icon-print.png" alt=""></button>
+            </div>
+        </div>
+        <div class="caption">
+            <p>Distribusi lama waktu peminjaman kendaraan per bulan</p>
+        </div>
+
+        <div class="chart-container" style="position: relative; height:204px; width:100%;">
+            <canvas id="statistic-bar" style="width:100%;"></canvas>
+        </div>
+
+        <table id="statistic-table">
+            <thead>
+                <tr>
+                    <th class="left">ID Transaksi</th>
+                    <th>Jenis Mobil</th>
+                    <th>Waktu Pinjam</th>
+                    <th>Waktu Kembali</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="left"><span class="statistic_id">12901</span></td>
+                    <td><span class="statistic-model">Avanza</span>(<span class="statistic-type">LMPV</span>)</td>
+                    <td><span class="borrowed-date">20 Mei 2020</span></td>
+                    <td><span class="return-date">22 Mei 2020</span></td>
+                    <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td class="left"><span class="statistic_id">12901</span></td>
+                    <td><span class="statistic-model">Avanza</span>(<span class="statistic-type">LMPV</span>)</td>
+                    <td><span class="borrowed-date">20 Mei 2020</span></td>
+                    <td><span class="return-date">22 Mei 2020</span></td>
+                    <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td class="left"><span class="statistic_id">12901</span></td>
+                    <td><span class="statistic-model">Avanza</span>(<span class="statistic-type">LMPV</span>)</td>
+                    <td><span class="borrowed-date">20 Mei 2020</span></td>
+                    <td><span class="return-date">22 Mei 2020</span></td>
+                    <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td class="left"><span class="statistic_id">12901</span></td>
+                    <td><span class="statistic-model">Avanza</span>(<span class="statistic-type">LMPV</span>)</td>
+                    <td><span class="borrowed-date">20 Mei 2020</span></td>
+                    <td><span class="return-date">22 Mei 2020</span></td>
+                    <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td class="left"><span class="statistic_id">12901</span></td>
+                    <td><span class="statistic-model">Avanza</span>(<span class="statistic-type">LMPV</span>)</td>
+                    <td><span class="borrowed-date">20 Mei 2020</span></td>
+                    <td><span class="return-date">22 Mei 2020</span></td>
+                    <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        var xValues = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+        var yValues = [55, 49, 44, 24, 15, 15, 23, 31, 21, 34, 11, 21];
+        var barColors = "#B1D1E4";
+
+        new Chart("statistic-bar", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

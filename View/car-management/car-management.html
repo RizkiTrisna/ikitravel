@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikitravel | Car List</title>
+    <link rel="stylesheet" href="car-management.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+        <div class="nav-item nav-transaction">
+            <a href=""><img src="../img/icon-transaction.png" alt=""></a>
+        </div>
+        <div class="nav-item nav-car-list">
+            <a href=""> <img src="../img/icon-car.png" alt=""> </a>
+        </div>
+        <div class="nav-item nav-account-config">
+            <a href=""> <img src="../img/icon-account-config.png" alt=""></a>
+        </div>
+        <div class="nav-item nav-stats">
+            <a href=""><img src="../img/icon-stats.png" alt=""></a>
+        </div>
+    </nav>
+    <main>
+        <div class="header">
+            <h1 class="title">Daftar Mobil</h1>
+        </div>
+        <div class="wrapper">
+            <div class="search-data-group">
+                <input type="text" name="search-car" id="search-car" placeholder="Cari data mobil">
+                <div class="btn-search"><a href="#"><img src="../img/icon-search.png" alt=""></a></div>
+            </div>
+            <div class="add-new-car"> 
+                    <button class="btn-add">Tambah data</button> 
+            </div>
+        </div>
+        <div class="caption">
+            <p>Total <span class="qty-car ">15</span> mobil ditemukan.</p>
+        </div>
+        <div class="table-group">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="left">ID</th>
+                        <th>Jenis Mobil</th>
+                        <th>Nomor Plat</th>
+                        <th>Harga Sewa</th>
+                        <th>Status Unit</th>
+                        <th>Status Display</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left"><span class="car_id">12901</span></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-type">LMPV</span>)</td>
+                        <td><span class="car_number">S 2356 UW</span></td>
+                        <td>Rp. <span class="price">125.000</span></td>
+                        <td><span class="ready">Tersedia</span></td>
+                        <td><span class="active">Aktif</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><span class="car_id">12901</span></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-type">LMPV</span>)</td>
+                        <td><span class="car_number">S 2356 UW</span></td>
+                        <td>Rp. <span class="price">125.000</span></td>
+                        <td><span class="borrowed">Dipinjam</span></td>
+                        <td><span class="non-active">Dinonaktifkan</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><span class="car_id">12901</span></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-type">LMPV</span>)</td>
+                        <td><span class="car_number">S 2356 UW</span></td>
+                        <td>Rp. <span class="price">125.000</span></td>
+                        <td><span class="borrowed">Dipinjam</span></td>
+                        <td><span class="non-active">Dinonaktifkan</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><span class="car_id">12901</span></td>
+                        <td><span class="car-model">Avanza</span>(<span class="car-type">LMPV</span>)</td>
+                        <td><span class="car_number">S 2356 UW</span></td>
+                        <td>Rp. <span class="price">125.000</span></td>
+                        <td><span class="borrowed">Dipinjam</span></td>
+                        <td><span class="non-active">Dinonaktifkan</span></td>
+                        <td><a href="#"><img src="../img/icon-open-up.png" alt=""></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+jenis mobil : avanza, jazz, camry
+merk mobil : toyota, honda, hyundai
+tipe mobil : sedan, jip, mpv, lmpv

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikitekno | Tambah Akun Baru</title>
+    <link rel="stylesheet" href="modal-edit-user.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 class="add-account-header">
+                Edit User
+            </h1>
+        </div>
+        <main id="edit-section-group">
+            <div id="edit-photo-container">
+                <div id="current-photo-wrapper">
+                    <img src="../img/picture-placeholder-rec.png" alt="" id="current-photo">
+                </div>
+                <div id="btn-edit-photo">
+                    <img src="../img/Icon-edit.png" alt="">
+                </div>
+            </div>
+            <div id="edit-data-group">
+                <div class="data data-sm" id="data-id-wrapper">
+                    <label for="data-id">
+                        ID User
+                    </label>
+                    <input type="text" class="input-sm" id="data-id" name="data-id">
+                </div>
+                <div class="data data-sm" id="data-name-wrapper">
+                    <label for="data-name">
+                        Nama User
+                    </label>
+                    <input type="text" class="input-sm" id="data-name" name="data-name">
+                </div>
+                <div class="data data-sm" id="data-email-wrapper">
+                    <label for="data-email">
+                        Email
+                    </label>
+                    <input type="email" class="input-sm" id="data-email" name="data-email">
+                </div>
+                <div class="data data-sm" id="data-password-wrapper">
+                    <label for="data-password">
+                        Password
+                    </label>
+                    <input type="password" class="input-sm" id="data-password" name="data-password">
+                </div>
+                <div class="data data-sm" id="data-phone-number-wrapper">
+                    <label for="data-phone-number">
+                        Nomor Telepon
+                    </label>
+                    <input type="text" class="input-sm" id="data-phone-number" name="data-phone-number">
+                </div>
+                <div class="data data-sm" id="data-file-user-wrapper">
+                    <a href="#" for="data-file-user">
+                        Unduh file data pribadi user
+                    </a> 
+                </div>
+                <div class="data data-sm" id="data-address-wrapper">
+                    <label for="data-address">
+                        Alamat
+                    </label>
+                    <textarea rows="5" class="input-lg" id="data-address" name="data-address"> </textarea>
+                </div>
+                <div class="data data-sm" id="data-born-day">
+                    <label for="data-born-day">
+                        Tanggal lahir
+                    </label>
+                    <input type="date" class="input-sm" id="data-born-day" name="data-born-day">
+                </div>
+                <div class="data data-sm" id="data-role">
+                    <label for="data-role">
+                        Role
+                    </label>
+                    <select class="input-sm" name="data-role" id="data-role">
+                        <option value="Admin">Admin</option>
+                        <option value="User">User</option> 
+                    </select>
+                </div>
+            </div>
+            <div id="btn-group">
+                <button id="btn-save">
+                    Simpan Perubahan
+                </button>
+                <button id="btn-cancel">
+                    Batalkan
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

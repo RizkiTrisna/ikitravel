@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Assistant', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: [init-main-col] 80px [end-sidebar] 1fr [end-main];
+    height: 100vh;
+}
+
+.sidebar {
+    grid-column-start: init-main-col;
+    grid-column-end: end-sidebar;
+    background-color: #051949;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sidebar .logo {
+    margin-top: 30px;
+}
+
+.sidebar .logo img {
+    height: 45px;
+    width: 45px;
+}
+
+.sidebar .nav-item {
+    margin-top: 50px;
+}
+
+.sidebar .nav-item a img {
+    width: 25px;
+}
+
+.sidebar .nav-transaction {
+    margin-top: 50px;
+}
+
+main {
+    grid-column-start: end-sidebar;
+    grid-column-end: end-main;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 100px;
+}
+
+main .header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #051949;
+}
+
+main .wrapper {
+    display: flex;
+}
+
+main .search-data-group {
+    margin-top: 8px;
+    height: 45px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .add-new-user {
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+main .add-new-user .btn-add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 150px;
+    background-color: #01CB63;  
+    border:none;
+    border-radius: 4px; 
+    font-style: inherit;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.search-data-group #search-user {
+    width: 399px;
+    padding: 11px 20px;
+    font-style: inherit;
+    font-size: 18px;
+    color: #595959;
+    border-radius: 4px;
+}
+
+.search-data-group .btn-search {
+    height: 108%;
+    margin-left: -4px;
+    width: 45px;
+    background-color: #CECECE;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-data-group .btn-search:hover {
+    background-color: #c0c0c0;
+}
+
+main .caption {
+    margin-top: 30px;
+}
+
+main .caption p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #595959;
+}
+
+main .table-group {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-group table {
+    width: 100%;
+}
+
+.table-group table tr {
+    text-align: center;
+}
+
+.table-group table thead {
+    height: 55px;
+}
+
+.table-group table thead th {
+    font-size: 20px;
+    font-weight: 600;
+    color: #051949;
+    vertical-align: baseline;
+    border-bottom: 3px solid #CECECE;
+}
+
+.table-group table thead th:first-child {
+    text-align: left;
+}
+
+/* end of thead */
+
+.table-group table tbody td:first-child {
+    text-align: left;
+    padding-top: 23px;
+    color: #595959;
+
+}
+
+.table-group table tbody tr td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table-group table tbody tr td:nth-child(2) {
+    color: #595959;
+}
+
+.table-group table tbody tr td:nth-child(3) {
+    color: #595959;
+}
+
+.table-group table tbody tr td:nth-child(3) .user-email {
+    color: #595959;
+}
+
+.table-group table tbody tr td:nth-child(4) {
+    color: #595959;
+}
+
+/* Unit status */
+.admin {
+    display: inline-block;
+    width: 200px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #3C6BDB;
+    background-color: #E0E9FF;
+    border-radius: 11px;
+}
+
+.customer {
+    display: inline-block;
+    width: 200px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #B09F00;
+    background-color: #FFF8B8;
+    border-radius: 11px;
+}
+
+/* display status */
+.non-active {
+    display: inline-block;
+    width: 200px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #E94848;
+    background-color: #FCECEC;
+    border-radius: 11px;
+}
+
+.active {
+    display: inline-block;
+    width: 200px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #3C6BDB;
+    background-color: #E0E9FF;
+    border-radius: 11px;
+}
